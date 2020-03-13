@@ -1,0 +1,1 @@
+This project serves both as a guide and an example on how to create .xlsx files (Excel Files) using the Apex Programming Language of Salesforce. This is useful for generating custom reports that are beyond the capabilities of Salesforce Report.
