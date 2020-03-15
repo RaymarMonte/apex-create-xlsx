@@ -8,7 +8,7 @@ Below is a detailed guide on how to accomplish this:
 5. Format all XML files extracted from the excel document for easier reading.
 6. Set-aside the sheet file(s) from xl\worksheets\ folder of the extracted files/folders.
 7. With the sheet file(s) removed, re-archive the extracted files/folders into a ZIP file.
-8. Upload the ZIP file as a Static Resource in your Salesforce instance. This should end up like [XLSXTemplateFrame](force-app\main\default\staticresources\XLSXTemplateFrame).
+8. Upload the ZIP file as a Static Resource in your Salesforce instance. This should end up like [XLSXTemplateFrame](force-app/main/default/staticresources/XLSXTemplateFrame).
 9. To be continued...
 
 
