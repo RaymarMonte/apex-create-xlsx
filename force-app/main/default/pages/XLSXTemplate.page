@@ -13,30 +13,18 @@
         <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" />
         <sheetData>
             <row r="2" spans="2:2" x14ac:dyDescent="0.25">
-                <c r="B2" t="s">
-                    <v>0</v>
+                <c r="B2" t="str">
+                    <v>Text List</v>
                 </c>
             </row>
-            <row r="3" spans="2:2" x14ac:dyDescent="0.25">
-                <c r="B3" t="s">
-                    <v>1</v>
-                </c>
-            </row>
-            <row r="4" spans="2:2" x14ac:dyDescent="0.25">
-                <c r="B4" t="s">
-                    <v>2</v>
-                </c>
-            </row>
-            <row r="5" spans="2:2" x14ac:dyDescent="0.25">
-                <c r="B5" t="s">
-                    <v>3</v>
-                </c>
-            </row>
-            <row r="6" spans="2:2" x14ac:dyDescent="0.25">
-                <c r="B6" t="s">
-                    <v>4</v>
-                </c>
-            </row>
+            <apex:repeat value="{!textList}" var="text">
+                <row spans="2:2" x14ac:dyDescent="0.25">
+                    <c></c>
+                    <c t="str">
+                        <v>{!text}</v>
+                    </c>
+                </row>
+            </apex:repeat>
         </sheetData>
         <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3" />
     </worksheet>
