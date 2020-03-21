@@ -1,6 +1,15 @@
-This project serves both as a guide and an example on how to create Excel .xlsx files using the Apex Programming Language of Salesforce. This is useful for generating custom reports that are beyond the capabilities of Salesforce Report. The general idea of how this is done is to create a .xlsx file using Microsoft Excel complete with sample data and styling, open up the file using a file archiving software to retrieve the XML files that composes it, put all those files to salesforce, and use Apex to recompose the .xlsx file while editings its content to plug-in actual data.
+This project serves both as a guide and an example on how to create Excel .xlsx files using the Apex Programming Language of Salesforce. This is useful for generating custom reports that are beyond the capabilities of Salesforce Report.
 
-Below is a detailed guide on how to accomplish this:
+The general idea of how this is done is to create a .xlsx file using Microsoft Excel complete with sample data and styling, open up the file using a file archiving software to retrieve the XML files that composes it, put all those files to salesforce, and use Apex to recompose the .xlsx file while editings its content to plug-in actual data.
+
+## Try This Out
+If you want to see this project in action, you can deploy the files in this project to your org by either copying them manually or pressing the button below:
+<a href="https://githubsfdeploy.herokuapp.com?owner=RaymarMonte&repo=apex-create-xlsx">
+  <img alt="Deploy to Salesforce"
+       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
+</a>
+
+## Detailed Guide
 1. Create and design an example of how your document will actually look like in Microsoft Excel complete with data and everything else.
 2. (Optional) Remove hidden metadata and personal information from the document using Excel's built-in Inspect Document.
 3. Save the document as an Excel Workbook type. The file created should have a .xlsx file type.
@@ -17,9 +26,11 @@ Below is a detailed guide on how to accomplish this:
 
 That's about it! If you have any questions, feel free to create an issue on this repo and I'll get back to you.
 
-Development-Related Notes:
+## Development-Related Notes
 - The example given here is very simple. Further research on Office Open XML and some trial and error need to be done to do some of the more complex features of Excel like formatting, styling, formulas, and such.
 - When creating and editing the excel file template on Microsoft Excel, I suggest having a standard zoom level upon saving the document since this may affect the generated size values of rows and cols on the sheet file.
 - Development-wise, I suggest not using shared strings on the XLSX and just directly putting strings on the template as to have an easier time focusing on just the template. You can take this a step further and completely delete sharedStrings.xml and all references to it on the other files on the Template Frame.
 
 Special thanks to Pedro Dal Col and Pliny Smith for Zippex. Zippex is a set of Apex classes that enables operation on zip files on Apex. Check it out at: https://github.com/pdalcol/Zippex
+
+Copyright (c) 2020 Raymar Monte
