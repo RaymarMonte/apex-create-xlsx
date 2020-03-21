@@ -4,10 +4,17 @@ The general idea of how this is done is to create a .xlsx file using Microsoft E
 
 ## Try This Out
 If you want to see this project in action, you can deploy the files in this project to your org by either copying them manually or pressing the button below:
+
 <a href="https://githubsfdeploy.herokuapp.com?owner=RaymarMonte&repo=apex-create-xlsx">
   <img alt="Deploy to Salesforce"
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
 </a>
+
+After that, run the snippet below on Anonymous Apex:
+```apex
+XLSXGenerator.generate(new List<String>{'Apex', 'Create', 'XLSX', 'By Raymar'});
+```
+Then check the Files tab and you will see there the generated .xlsx file.
 
 ## Detailed Guide
 1. Create and design an example of how your document will actually look like in Microsoft Excel complete with data and everything else.
